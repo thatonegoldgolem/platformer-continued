@@ -13,7 +13,7 @@ config_version=5
 config/name="platformer"
 run/main_scene="uid://calwafp7mfcsn"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://b1tmvbqhntam4"
 
 [display]
 
