@@ -1,5 +1,9 @@
 # Platformer
 A simple platformer made in Godot.
+> [!NOTE]
+> This project is a continuation of the now deprecated repo on
+> https://github.com/Programmeerman/platformer, older versions before
+> 1.1.0 snapshot 2 are there.
 ## Quick start
 ### Users (windows only)
 1. Download the .zip file
