@@ -1,4 +1,4 @@
-# Platformer
+# PixelHopper
 A simple platformer made in Godot.
 > [!NOTE]
 > This project is a continuation of the now deprecated repo on
