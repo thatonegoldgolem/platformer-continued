@@ -27,4 +27,4 @@ emulator.
 > I am currently planning to release for mac and some linux distros.
 > Please keep an eye on that, Linux and macOS users!
 ### Web version?
-Coming soon!
+Snapshot 2 is now live at thatonegoldgolem.github.io
