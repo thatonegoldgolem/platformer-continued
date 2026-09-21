@@ -23,5 +23,8 @@ UPDATE: Snapshots are every Thursday from now.
 Currently not, since I only run Windows. However, you can use an app like Wine
 to use this in an emulator, but don't report issues complaining about the
 emulator.
+> [!NOTE]
+> I am currently planning to release for mac and some linux distros.
+> Please keep an eye on that, Linux and macOS users!
 ### Web version?
 Coming soon!
