@@ -1,15 +1,16 @@
-[gd_scene format=4 uid="uid://bx46cljpyibtv"]
+[gd_scene format=4 uid="uid://ccwgbavprm4ur"]
 
-[ext_resource type="Texture2D" uid="uid://dej7x2w5i7slk" path="res://images/Background/Blue.png" id="1_qsj6i"]
-[ext_resource type="Texture2D" uid="uid://my26dibbjq0h" path="res://images/Tilemap/Terrain (16x16).png" id="2_heu5o"]
-[ext_resource type="PackedScene" uid="uid://n3aewvqavrpb" path="res://scenes/player.tscn" id="3_s45gt"]
-[ext_resource type="PackedScene" uid="uid://csb1u1dhhmcvg" path="res://scenes/snail.tscn" id="4_4vryo"]
-[ext_resource type="PackedScene" uid="uid://mhhmhiv68pl4" path="res://scenes/apple.tscn" id="5_g1ckg"]
-[ext_resource type="Texture2D" uid="uid://33c5nuwtw5yw" path="res://images/Tilemap/Checkpoint (Flag Idle)(64x64).png" id="6_t7v7a"]
-[ext_resource type="PackedScene" uid="uid://82f7iyhvb6xt" path="res://scenes/moving_platform.tscn" id="7_qsj6i"]
+[ext_resource type="Texture2D" uid="uid://dej7x2w5i7slk" path="res://images/Background/Blue.png" id="1_mnr30"]
+[ext_resource type="Texture2D" uid="uid://my26dibbjq0h" path="res://images/Tilemap/Terrain (16x16).png" id="2_yu5ka"]
+[ext_resource type="PackedScene" uid="uid://n3aewvqavrpb" path="res://scenes/player.tscn" id="3_0g6gi"]
+[ext_resource type="PackedScene" uid="uid://csb1u1dhhmcvg" path="res://scenes/snail.tscn" id="4_v2r1a"]
+[ext_resource type="PackedScene" uid="uid://mhhmhiv68pl4" path="res://scenes/apple.tscn" id="5_1gkwy"]
+[ext_resource type="PackedScene" uid="uid://jxm3n5o8dt7b" path="res://scenes/snailNotWalking.tscn" id="5_yu5ka"]
+[ext_resource type="Texture2D" uid="uid://33c5nuwtw5yw" path="res://images/Tilemap/Checkpoint (Flag Idle)(64x64).png" id="6_rge87"]
+[ext_resource type="PackedScene" uid="uid://82f7iyhvb6xt" path="res://scenes/moving_platform.tscn" id="7_emhfo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4tcl0"]
-texture = ExtResource("2_heu5o")
+texture = ExtResource("2_yu5ka")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -173,43 +174,43 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_4tcl0")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2r1tl"]
-atlas = ExtResource("6_t7v7a")
+atlas = ExtResource("6_rge87")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8a7m2"]
-atlas = ExtResource("6_t7v7a")
+atlas = ExtResource("6_rge87")
 region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_plydf"]
-atlas = ExtResource("6_t7v7a")
+atlas = ExtResource("6_rge87")
 region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5ntmo"]
-atlas = ExtResource("6_t7v7a")
+atlas = ExtResource("6_rge87")
 region = Rect2(192, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nkeig"]
-atlas = ExtResource("6_t7v7a")
+atlas = ExtResource("6_rge87")
 region = Rect2(256, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nfihu"]
-atlas = ExtResource("6_t7v7a")
+atlas = ExtResource("6_rge87")
 region = Rect2(320, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lgguw"]
-atlas = ExtResource("6_t7v7a")
+atlas = ExtResource("6_rge87")
 region = Rect2(384, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jprdt"]
-atlas = ExtResource("6_t7v7a")
+atlas = ExtResource("6_rge87")
 region = Rect2(448, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ps2vj"]
-atlas = ExtResource("6_t7v7a")
+atlas = ExtResource("6_rge87")
 region = Rect2(512, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sbmf2"]
-atlas = ExtResource("6_t7v7a")
+atlas = ExtResource("6_rge87")
 region = Rect2(576, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1xax6"]
@@ -260,32 +261,40 @@ scale = Vector2(3, 3)
 texture_filter = 1
 offset_right = 430.6667
 offset_bottom = 239.0
-texture = ExtResource("1_qsj6i")
+texture = ExtResource("1_mnr30")
 stretch_mode = 1
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1364687799]
 texture_filter = 1
-tile_map_data = PackedByteArray("AAAAAA4AAAAHAAkAAAABAA4AAAAHAAkAAAACAA4AAAAHAAkAAAADAA4AAAAHAAkAAAAMAA4AAAAHAAkAAAANAA4AAAAHAAkAAAAOAA4AAAAHAAkAAAAPAA4AAAAHAAkAAAAQAA4AAAAHAAkAAAARAA4AAAAHAAkAAAASAA4AAAAHAAkAAAATAA4AAAAHAAkAAAAUAA4AAAAHAAkAAAAVAA4AAAAHAAkAAAAWAA4AAAAHAAkAAAAXAA4AAAAHAAkAAAAYAA4AAAAHAAkAAAAZAA4AAAAHAAkAAAAaAA4AAAAHAAkAAAAMAA0AAAAHAAkAAAANAA0AAAAHAAkAAAAOAA0AAAAHAAkAAAAPAA0AAAAHAAkAAAAQAA0AAAAHAAkAAAARAA0AAAAHAAkAAAASAA0AAAAHAAkAAAATAA0AAAAHAAkAAAAUAA0AAAAHAAkAAAAVAA0AAAAHAAkAAAAWAA0AAAAHAAkAAAAXAA0AAAAHAAkAAAAYAA0AAAAHAAkAAAAZAA0AAAAHAAkAAAAaAA0AAAAHAAkAAAAMAAwAAAAHAAgAAAANAAwAAAAHAAgAAAAOAAwAAAAHAAgAAAAPAAwAAAAHAAgAAAAQAAwAAAAHAAgAAAARAAwAAAAHAAgAAAASAAwAAAAHAAgAAAATAAwAAAAHAAgAAAAUAAwAAAAHAAgAAAAVAAwAAAAHAAgAAAAYAAwAAAAHAAgAAAAZAAwAAAAHAAgAAAAaAAwAAAAHAAkAAAADAAwAAAAHAAgAAAACAAwAAAAHAAkAAAAaAAsAAAAHAAkAAAAaAAoAAAAHAAkAAAAaAAkAAAAHAAkAAAAaAAgAAAAHAAkAAAAaAAIAAAAHAAkAAAAaAAEAAAAHAAkAAAAaAAAAAAAHAAkAAAAZAAAAAAAHAAkAAAAYAAAAAAAHAAkAAAAXAAAAAAAHAAkAAAAWAAAAAAAHAAkAAAAVAAAAAAAHAAkAAAAUAAAAAAAHAAkAAAATAAAAAAAHAAkAAAASAAAAAAAHAAkAAAARAAAAAAAHAAkAAAAQAAAAAAAHAAkAAAAPAAAAAAAHAAkAAAAOAAAAAAAHAAkAAAANAAAAAAAHAAkAAAAMAAAAAAAHAAkAAAALAAAAAAAHAAkAAAAKAAAAAAAHAAkAAAAJAAAAAAAHAAkAAAAIAAAAAAAHAAkAAAAHAAAAAAAHAAkAAAAGAAAAAAAHAAkAAAAFAAAAAAAHAAkAAAAEAAAAAAAHAAkAAAADAAAAAAAHAAkAAAACAAAAAAAHAAkAAAABAAAAAAAHAAkAAAAAAAAAAAAHAAkAAAAAAAEAAAAHAAkAAAAAAAIAAAAHAAkAAAAAAAMAAAAHAAkAAAAAAAQAAAAHAAkAAAAAAAUAAAAHAAkAAAAAAAYAAAAHAAkAAAAAAAcAAAAHAAkAAAAAAAgAAAAHAAkAAAAAAAkAAAAHAAkAAAAAAAoAAAAHAAkAAAAAAAsAAAAHAAkAAAAAAAwAAAAHAAkAAAAAAA0AAAAHAAkAAAAaAAMAAAAHAAkAAAAaAAQAAAAHAAkAAAABAA0AAAAHAAkAAAACAA0AAAAHAAkAAAADAA0AAAAHAAkAAAABAAwAAAAHAAkAAAALAAwAAAAHAAgAAAALAA0AAAAHAAkAAAALAA4AAAAHAAkAAAAKAA4AAAAHAAkAAAAJAA0AAAAHAAkAAAAIAA0AAAAHAAkAAAAIAA4AAAAHAAkAAAAHAA4AAAAHAAkAAAAGAA4AAAAHAAkAAAAFAA4AAAAHAAkAAAAEAA4AAAAHAAkAAAAEAA0AAAAHAAkAAAAFAA0AAAAHAAkAAAAGAA0AAAAHAAkAAAAHAA0AAAAHAAkAAAAKAA0AAAAHAAkAAAAJAA4AAAAHAAkAAAAKAAwAAAAHAAgAAAAJAAwAAAAHAAgAAAAIAAwAAAAHAAgAAAAHAAwAAAAHAAgAAAAGAAwAAAAHAAgAAAAFAAwAAAAHAAgAAAAEAAwAAAAHAAgAAAAWAAwAAAAHAAgAAAAXAAwAAAAHAAgAAAAZAAgAAAAHAAgAAAAEAAgAAAAHAAgAAAAFAAgAAAAHAAgAAAAGAAgAAAAHAAgAAAAYAAcAAAAHAAgAAAACAAsAAAAHAAkAAAABAAsAAAAHAAkAAAABAAoAAAAHAAgAAAACAAoAAAAHAAgAAAA=")
+tile_map_data = PackedByteArray("AAAAAA4AAAAHAAkAAAABAA4AAAAHAAkAAAACAA4AAAAHAAkAAAADAA4AAAAHAAkAAAAMAA4AAAAHAAkAAAANAA4AAAAHAAkAAAAOAA4AAAAHAAkAAAAPAA4AAAAHAAkAAAAQAA4AAAAHAAkAAAARAA4AAAAHAAkAAAASAA4AAAAHAAkAAAATAA4AAAAHAAkAAAAUAA4AAAAHAAkAAAAVAA4AAAAHAAkAAAAWAA4AAAAHAAkAAAAXAA4AAAAHAAkAAAAYAA4AAAAHAAkAAAAZAA4AAAAHAAkAAAAaAA4AAAAHAAkAAAAMAA0AAAAHAAkAAAANAA0AAAAHAAkAAAAOAA0AAAAHAAkAAAAPAA0AAAAHAAkAAAAQAA0AAAAHAAkAAAARAA0AAAAHAAkAAAASAA0AAAAHAAkAAAATAA0AAAAHAAkAAAAUAA0AAAAHAAkAAAAVAA0AAAAHAAkAAAAWAA0AAAAHAAkAAAAXAA0AAAAHAAkAAAAYAA0AAAAHAAkAAAAZAA0AAAAHAAkAAAAaAA0AAAAHAAkAAAAMAAwAAAAHAAgAAAANAAwAAAAHAAgAAAAOAAwAAAAHAAgAAAAPAAwAAAAHAAgAAAAQAAwAAAAHAAgAAAARAAwAAAAHAAgAAAASAAwAAAAHAAgAAAATAAwAAAAHAAgAAAAUAAwAAAAHAAgAAAAVAAwAAAAHAAgAAAAYAAwAAAAHAAgAAAAZAAwAAAAHAAgAAAAaAAwAAAAHAAkAAAADAAwAAAAHAAgAAAACAAwAAAAHAAkAAAAaAAsAAAAHAAkAAAAaAAoAAAAHAAkAAAAaAAkAAAAHAAkAAAAaAAgAAAAHAAkAAAAaAAIAAAAHAAkAAAAaAAEAAAAHAAkAAAAaAAAAAAAHAAkAAAAZAAAAAAAHAAkAAAAYAAAAAAAHAAkAAAAXAAAAAAAHAAkAAAAWAAAAAAAHAAkAAAAVAAAAAAAHAAkAAAAUAAAAAAAHAAkAAAATAAAAAAAHAAkAAAASAAAAAAAHAAkAAAARAAAAAAAHAAkAAAAQAAAAAAAHAAkAAAAPAAAAAAAHAAkAAAAOAAAAAAAHAAkAAAANAAAAAAAHAAkAAAAMAAAAAAAHAAkAAAALAAAAAAAHAAkAAAAKAAAAAAAHAAkAAAAJAAAAAAAHAAkAAAAIAAAAAAAHAAkAAAAHAAAAAAAHAAkAAAAGAAAAAAAHAAkAAAAFAAAAAAAHAAkAAAAEAAAAAAAHAAkAAAADAAAAAAAHAAkAAAACAAAAAAAHAAkAAAABAAAAAAAHAAkAAAAAAAAAAAAHAAkAAAAAAAEAAAAHAAkAAAAAAAIAAAAHAAkAAAAAAAMAAAAHAAkAAAAAAAQAAAAHAAkAAAAAAAUAAAAHAAkAAAAAAAYAAAAHAAkAAAAAAAcAAAAHAAkAAAAAAAgAAAAHAAkAAAAAAAkAAAAHAAkAAAAAAAoAAAAHAAkAAAAAAAsAAAAHAAkAAAAAAAwAAAAHAAkAAAAAAA0AAAAHAAkAAAAaAAMAAAAHAAkAAAAaAAQAAAAHAAkAAAABAA0AAAAHAAkAAAACAA0AAAAHAAkAAAADAA0AAAAHAAkAAAABAAwAAAAHAAkAAAALAAwAAAAHAAgAAAALAA0AAAAHAAkAAAALAA4AAAAHAAkAAAAKAA4AAAAHAAkAAAAJAA0AAAAHAAkAAAAIAA0AAAAHAAkAAAAIAA4AAAAHAAkAAAAHAA4AAAAHAAkAAAAGAA4AAAAHAAkAAAAFAA4AAAAHAAkAAAAEAA4AAAAHAAkAAAAEAA0AAAAHAAkAAAAFAA0AAAAHAAkAAAAGAA0AAAAHAAkAAAAHAA0AAAAHAAkAAAAKAA0AAAAHAAkAAAAJAA4AAAAHAAkAAAAKAAwAAAAHAAgAAAAJAAwAAAAHAAgAAAAIAAwAAAAHAAgAAAAHAAwAAAAHAAgAAAAGAAwAAAAHAAgAAAAFAAwAAAAHAAgAAAAEAAwAAAAHAAgAAAAWAAwAAAAHAAgAAAAXAAwAAAAHAAgAAAAZAAgAAAAHAAgAAAAEAAgAAAAHAAgAAAAFAAgAAAAHAAgAAAAGAAgAAAAHAAgAAAAYAAcAAAAHAAgAAAACAAsAAAAHAAkAAAABAAsAAAAHAAkAAAABAAoAAAAHAAgAAAACAAoAAAAHAAgAAAASAAYAAAAHAAgAAAATAAUAAAAHAAgAAAAUAAQAAAAHAAgAAAATAAYAAAAHAAkAAAAUAAUAAAAHAAkAAAARAAMAAAAHAAgAAAAQAAMAAAAHAAgAAAAPAAMAAAAHAAgAAAAOAAMAAAAHAAgAAAANAAMAAAAHAAgAAAAMAAMAAAAHAAgAAAALAAMAAAAHAAgAAAAKAAMAAAAHAAgAAAAJAAMAAAAHAAgAAAAIAAMAAAAHAAgAAAAHAAMAAAAHAAgAAAAGAAMAAAAHAAgAAAABAAUAAAAHAAgAAAACAAUAAAAHAAgAAAADAAUAAAAHAAgAAAAEAAUAAAAHAAgAAAAFAAUAAAAHAAgAAAA=")
 tile_set = SubResource("TileSet_dd0lh")
 
-[node name="Player" parent="." unique_id=785978678 instance=ExtResource("3_s45gt")]
+[node name="Player" parent="." unique_id=785978678 instance=ExtResource("3_0g6gi")]
 position = Vector2(29.333334, 145.66667)
 scale = Vector2(1, 1)
 
 [node name="Enemies" type="Node2D" parent="." unique_id=1986906826]
 
-[node name="Snail" parent="Enemies" unique_id=1128200234 instance=ExtResource("4_4vryo")]
+[node name="Snail" parent="Enemies" unique_id=1128200234 instance=ExtResource("4_v2r1a")]
 position = Vector2(299, 175.33333)
 scale = Vector2(0.5, 0.5)
 
-[node name="Snail2" parent="Enemies" unique_id=1140687791 instance=ExtResource("4_4vryo")]
+[node name="Snail2" parent="Enemies" unique_id=1140687791 instance=ExtResource("4_v2r1a")]
 position = Vector2(164.33333, 174)
+scale = Vector2(0.5, 0.5)
+
+[node name="Snail3" parent="Enemies" unique_id=2083976453 instance=ExtResource("5_yu5ka")]
+position = Vector2(52, 62.333336)
 scale = Vector2(0.5, 0.5)
 
 [node name="Apples" type="Node2D" parent="." unique_id=1546754675]
 
-[node name="Apple" parent="Apples" unique_id=523064855 instance=ExtResource("5_g1ckg")]
+[node name="Apple" parent="Apples" unique_id=523064855 instance=ExtResource("5_1gkwy")]
 position = Vector2(393, 106.00001)
+scale = Vector2(1, 1)
+
+[node name="Apple2" parent="Apples" unique_id=137733287 instance=ExtResource("5_1gkwy")]
+position = Vector2(102, 41.333336)
 scale = Vector2(1, 1)
 
 [node name="Flag" type="AnimatedSprite2D" parent="." unique_id=2103080897]
@@ -307,8 +316,5 @@ shape = SubResource("RectangleShape2D_1seuy")
 
 [node name="MovingPlatforms" type="Node2D" parent="." unique_id=1001775962]
 
-[node name="MovingPlatform" parent="MovingPlatforms" unique_id=2009843115 instance=ExtResource("7_qsj6i")]
-position = Vector2(181.33334, 137.66667)
-
-[node name="MovingPlatform2" parent="MovingPlatforms" unique_id=1186961592 instance=ExtResource("7_qsj6i")]
-position = Vector2(271.33334, 136.33333)
+[node name="MovingPlatform" parent="MovingPlatforms" unique_id=2009843115 instance=ExtResource("7_emhfo")]
+position = Vector2(184.00002, 111)
